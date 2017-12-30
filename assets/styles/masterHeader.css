@@ -1,23 +1,51 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 .masterHeader {
-  background-image: url("../images/shadow.svg");
-  height: 100px;
-  background-repeat: repeat no-repeat;
+  background-image: url("../images/bannerBackground.png");
+  min-height: 659px;
+  position: relative;
+  background-size: 100%;
   display: block;
 }
+.masterHeader .top_shadow_picture {
+  background: url("../images/shadow.svg") repeat no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 38px;
+}
 .masterHeader .logo {
+  content: "";
+  background-image: url("../images/logo.png");
+  display: block;
   float: left;
   position: absolute;
   left: 46%;
   margin-top: 5px;
   height: 20px;
-}
-.masterHeader .logo img {
-  height: 24px;
+  width: 62px;
 }
 .masterHeader .masterNav {
   margin: 0px;
   padding: 4px;
   float: left;
+  zoom: 1;
+}
+.masterHeader .masterNav:before,
+.masterHeader .masterNav:after {
+  content: "";
+  display: table;
+}
+.masterHeader .masterNav:after {
+  clear: both;
 }
 .masterHeader .nav-list {
   display: inline;
@@ -44,15 +72,60 @@
   text-decoration: none;
 }
 .masterHeader .searchInput {
-  background: rgba(250, 250, 250, 0.9) url("../images/magnifying-glass34.png") no-repeat 95% 50%;
+  background: url("../images/magnifying-glass34.png") no-repeat 95% 50%;
   position: absolute;
+  background-color: white;
+  display: inline;
   float: right;
   border-radius: 16px;
   right: 2%;
   padding-top: 0px;
   padding-left: 5px;
+  opacity: 0.9;
   margin-top: 5px;
   color: #020202;
   border-color: transparent;
   font-size: 16px;
+}
+.masterHeader .searchInput input {
+  border-color: transparent;
+  background-color: transparent;
+}
+.masterHeader h1 {
+  font-size: 55px;
+  color: white;
+  position: absolute;
+  top: 48%;
+  left: 30%;
+}
+.masterHeader .subtitle_link {
+  background-color: #54d154;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 25px;
+  border-color: #54d154;
+  color: white;
+  text-transform: uppercase;
+  font-weight: lighter;
+  display: inline;
+  position: absolute;
+  top: 70%;
+  left: 43%;
+  height: 40px;
+  width: 180px;
+  padding-top: 8px;
+  padding-left: 20px;
+}
+.masterHeader .masterSection_scroll {
+  background-color: white;
+  background: rgba(250, 250, 250, 0.9) url("../images/Shape 1.png") no-repeat 97% 65%;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  bottom: 2%;
+  left: 45%;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 15px;
 }
