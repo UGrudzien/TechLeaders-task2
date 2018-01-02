@@ -19,11 +19,16 @@ h2 {
   font-size: 21px;
   color: #828181;
   text-align: center;
+  background: url(../images/Rectangle3.png) no-repeat 50% 100%;
+  height: 42px;
+  padding-top: 42px;
+  margin-top: 0px;
 }
 h3 {
   font-size: 16px;
   color: #b7b3b3;
   text-align: center;
+  margin-bottom: 62px;
 }
 .masterHeader {
   background-image: url("../images/bannerBackground.png");
@@ -159,16 +164,16 @@ h3 {
 .clearfix:after {
   clear: both;
 }
-.firstSection {
+.secondSection {
   height: 580px;
   background-color: white;
 }
-.firstSection_subsection {
+.secondSection_subsection {
   float: left;
   text-align: center;
   max-width: 33%;
 }
-.firstSection_subsection .sectionIconBackground {
+.secondSection_subsection .sectionIconBackground {
   height: 142px;
   width: 142px;
   background-color: #e1f3e1;
@@ -176,7 +181,7 @@ h3 {
   border-radius: 15px;
   display: inline-block;
 }
-.firstSection_subsection .sectionIcon {
+.secondSection_subsection .sectionIcon {
   content: "";
   height: 78px;
   width: 88px;
@@ -187,21 +192,109 @@ h3 {
   top: 25%;
   right: 22%;
 }
-.firstSection_subsection .sectionIcon_title {
+.secondSection_subsection .sectionIcon_title {
   display: block;
   font-size: 24px;
   color: #828181;
 }
-.firstSection_subsection .sectionIcon_content {
+.secondSection_subsection .sectionIcon_content {
   display: block;
   font-size: 15px;
   color: #828181;
 }
-.firstSection_subsection .learnMore {
+.secondSection_subsection .learnMore {
   background-color: #54d154;
   border-radius: 15px;
   color: #ffffff;
   text-decoration: none;
   padding-left: 15px;
   padding-right: 15px;
+}
+.thirdSection {
+  height: 750px;
+  background-color: #54d154;
+  position: relative;
+  /*problem z dodaniem zmiennej backgroundGreen*/
+}
+.thirdSection a {
+  text-decoration: none;
+}
+.thirdSection h3 {
+  color: #2b9b2b;
+}
+.thirdSection h2 {
+  color: #207b20;
+  background: url(../images/thirdSectionPictures/Rectangle3.3.png) no-repeat 50% 100%;
+}
+.thirdSection .list_picture {
+  display: inline-block;
+  height: 350px;
+  width: 920px;
+  background: url(../images/thirdSectionPictures/image.png) no-repeat;
+  position: absolute;
+  top: 250px;
+  left: 20%;
+}
+.thirdSection .buttonsThirdSection {
+  text-align: center;
+}
+.thirdSection .buttonsThirdSection a {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #2b9b2b;
+  border-color: #207b20;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+}
+.thirdSection .buttonsThirdSection a:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #ffffff;
+  background-color: #207b20;
+}
+.thirdSection .buttonsThirdSection a:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left-width: 0px;
+}
+.thirdSection .viewMoreButton {
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 48%;
+  color: white;
+  border-color: #207b20;
+  border-radius: 20px;
+  border-style: solid;
+  padding-right: 25px;
+  padding-left: 10px;
+  background: url(../images/thirdSectionPictures/Shape2.png) no-repeat 97% 50%;
+  background-color: #207b20;
+}
+.forthSection {
+  height: 350px;
+}
+.forthSection a {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 35px;
+}
+.forthSection a:nth-of-type(1) {
+  background: url(../images/forthSectionPictures/uparrow28.png) no-repeat;
+}
+.forthSection a:nth-of-type(2) {
+  background: url(../images/forthSectionPictures/up_arrow28.png) no-repeat;
+}
+.forthSection a::after {
+  clear: both;
+}
+.forthSection span {
+  display: block;
+  float: left;
+  text-align: center;
+}
+.forthSection_cytation {
+  display: block;
 }

@@ -1,0 +1,69 @@
+@import "variables"; 
+ @radius: 20px;
+.thirdSection{
+    height: 750px;
+    background-color:@backgroundGreen;
+    position: relative;
+    a{text-decoration: none}
+    h3{
+        color: @textColorGreen;
+    }
+    h2{
+        color:@textColorGreenTitle;
+        background: url(../images/thirdSectionPictures/Rectangle3.3.png) no-repeat 50% 100%;
+    }
+    /*problem z dodaniem zmiennej backgroundGreen*/
+    .list_picture{
+        display: inline-block;
+        height:350px;
+        width: 920px;
+        background: url(../images/thirdSectionPictures/image.png) no-repeat;
+        position: absolute;
+        top: 250px;
+        left: 20%;
+    }
+    .buttonsThirdSection{
+       
+        text-align: center;
+        a{
+            
+            padding-left: 20px;
+            padding-right: 20px;
+           color: #2b9b2b;
+            border-color: @textColorGreenTitle;
+            background-color: @bodyBgColor;
+            border-style: solid;
+            border-width: 1px;
+            
+        }
+      
+        
+         a:first-child{
+        border-top-left-radius: @radius;
+        border-bottom-left-radius: @radius;
+        color:  @bodyBgColor;
+        background-color: @textColorGreenTitle;
+        }
+        a:last-child{
+        border-top-right-radius: @radius;
+        border-bottom-right-radius: @radius;
+        border-left-width: 0px;
+        }
+    }
+    .viewMoreButton{
+        display: inline-block;
+        position: absolute;
+        bottom: 10%;
+        left: 48%;
+        color: white;
+        border-color:@textColorGreenTitle;
+        border-radius: @radius;
+        border-style: solid;
+        padding-right:25px;
+        padding-left: 10px;
+        background: url(../images/thirdSectionPictures/Shape2.png) no-repeat 97% 50%;
+        background-color: @textColorGreenTitle;
+
+    }
+   
+}
