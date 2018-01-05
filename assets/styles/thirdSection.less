@@ -1,5 +1,7 @@
 @import "variables"; 
- @radius: 20px;
+@import "global";
+
+
 .thirdSection{
     height: 750px;
     background-color:@backgroundGreen;
@@ -50,17 +52,11 @@
         border-left-width: 0px;
         }
     }
-    .viewMoreButton{
-        display: inline-block;
-        position: absolute;
-        bottom: 10%;
-        left: 48%;
+    .sectionButton{
+      
         color: white;
         border-color:@textColorGreenTitle;
-        border-radius: @radius;
-        border-style: solid;
-        padding-right:25px;
-        padding-left: 10px;
+      
         background: url(../images/thirdSectionPictures/Shape2.png) no-repeat 97% 50%;
         background-color: @textColorGreenTitle;
 
