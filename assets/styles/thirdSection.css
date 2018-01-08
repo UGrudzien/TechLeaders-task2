@@ -26,6 +26,13 @@ h3 {
   text-align: center;
   margin-bottom: 62px;
 }
+.greenSectionTitle h2 {
+  color: #207b20;
+  background: url(../images/Rectangle3.3.png) no-repeat 50% 100%;
+}
+.greenSectionTitle h3 {
+  color: #2b9b2b;
+}
 .sectionButton {
   font-size: 18px;
   text-align: center;
@@ -39,6 +46,7 @@ h3 {
   border-style: solid;
   padding-right: 25px;
   padding-left: 10px;
+  text-decoration: none;
 }
 .sectionButton span {
   vertical-align: -webkit-baseline-middle;
@@ -52,12 +60,12 @@ h3 {
 .thirdSection a {
   text-decoration: none;
 }
-.thirdSection h3 {
-  color: #2b9b2b;
-}
 .thirdSection h2 {
   color: #207b20;
-  background: url(../images/thirdSectionPictures/Rectangle3.3.png) no-repeat 50% 100%;
+  background: url(../images/Rectangle3.3.png) no-repeat 50% 100%;
+}
+.thirdSection h3 {
+  color: #2b9b2b;
 }
 .thirdSection .list_picture {
   display: inline-block;
@@ -102,6 +110,14 @@ h3 {
   /*width: 170px;
         height: 170px;*/
 }
+.thirdSection .listPicturesMiniature img:hover {
+  width: 170px;
+  height: 170px;
+  padding: 0px;
+}
+.thirdSection .listPicturesMiniature img {
+  padding: 5px;
+}
 .thirdSection .picturesList_S3 {
   float: left;
   text-align: center;
@@ -109,15 +125,17 @@ h3 {
   max-width: 70%;
   position: absolute;
   left: 10%;
+  /*.listPictures:hover{
+        img{
+            width: 170px;
+            height: 170px;
+        }
+        padding: 0px 5px 0px 5px;
+        
+     
+    }*/
 }
 .thirdSection .picturesList_S3 .listPictures {
   display: inline-table;
   padding: 20px 10px 0px 10px;
-}
-.thirdSection .picturesList_S3 .listPictures:hover {
-  padding: 0px 5px 0px 5px;
-}
-.thirdSection .picturesList_S3 .listPictures:hover img {
-  width: 170px;
-  height: 170px;
 }

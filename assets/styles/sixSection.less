@@ -1,0 +1,112 @@
+@import "variables";
+@import "global";
+@import "cf";
+.sixSection{
+    height: 480px;
+    background-color: #54d154;
+   text-align: center;
+
+    .greenSectionTitle;
+    .center{
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        
+            .clearfix;
+        
+    
+    }
+    .media_section_member_team{
+        position: relative;
+        height: 295px;
+        float: left;
+        width: 15%;
+        &:first-child{
+            margin-left: 140px;
+        }
+        /*&::last-child&:after{
+            .clearfix;
+        }
+       */
+        .member_team{
+            display: inline-block;
+            height: 124px;
+            width: 124px;
+            position: absolute;
+            top: 1%;
+            left: 15%;
+        
+        }
+        .member_1{
+            background: url(../images/sixSection/CrisnaWijaya.png) no-repeat;            
+        }
+        .member_2{
+            background: url(../images/sixSection/StuartHeritage.png) no-repeat;            
+        }
+        .member_3{
+            background: url(../images/sixSection/AdikNKL.png) no-repeat;            
+            
+        }
+        .member_4{
+            background: url(../images/sixSection/ZanDJ.png) no-repeat;            
+            
+        }
+        .member_5{
+            background: url(../images/sixSection/FaizalFebri.png) no-repeat;            
+            
+        }
+
+        .line{
+            display: block;
+            background-color: black;
+            height: 1px;
+         
+           
+            width: 80px;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 60%;
+            left: 25%;
+        }
+        .member_team_name{
+            display: inline-block;
+            color: white;
+            position: absolute;
+            top: 75%;
+            left: 28%;
+
+        }
+        .sectionButton{
+            opacity: 0.9;
+            background: url(../images/spriteSocialICO.png) no-repeat center;
+            background-color: @bodyBgColor ;
+            border-style: none;
+            display: inline-block;
+            height: 30px;
+            width: 85px;
+            position: absolute;
+            top: 85%;
+            left: 15%;
+            }
+        }
+        .lSec{
+            height: 90px;
+            background-color: #3eba3e;
+            .sectionButton{
+                background-color: #54d154;
+            text-transform: uppercase;
+            position: relative;
+            border-style: none;
+            color: white;
+            position: relative;
+            bottom: -25%;
+            left: 0%;
+            box-shadow: -2px 7px 12px #38a838;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top:5px;
+            height: 35px;
+            }
+        }
+        
+    }
