@@ -49,5 +49,8 @@ h3 {
   text-decoration: none;
 }
 .sectionButton span {
+  display: inline-block;
+  vertical-align: middle;
   vertical-align: -webkit-baseline-middle;
+  vertical-align: -moz-middle-with-baseline;
 }

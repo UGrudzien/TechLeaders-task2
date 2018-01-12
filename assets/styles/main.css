@@ -53,7 +53,10 @@ h3 {
   text-decoration: none;
 }
 .sectionButton span {
+  display: inline-block;
+  vertical-align: middle;
   vertical-align: -webkit-baseline-middle;
+  vertical-align: -moz-middle-with-baseline;
 }
 .masterHeader {
   background-image: url("../images/bannerBackground.png");
@@ -173,7 +176,7 @@ h3 {
   color: black;
   position: absolute;
   bottom: 2%;
-  left: 45%;
+  left: 46%;
   padding-left: 10px;
   padding-right: 15px;
   border-radius: 15px;
@@ -196,7 +199,7 @@ h3 {
 .secondSection_subsection {
   float: left;
   text-align: center;
-  max-width: 33%;
+  width: 33%;
 }
 .secondSection_subsection .sectionIconBackground {
   height: 142px;
@@ -215,17 +218,22 @@ h3 {
   background: url(../images/secondSectionPictures/Forma1.png) no-repeat 50%;
   position: absolute;
   top: 25%;
-  right: 22%;
+  right: 20%;
 }
 .secondSection_subsection .sectionIcon_title {
   display: block;
   font-size: 24px;
   color: #828181;
+  font-weight: bold;
 }
 .secondSection_subsection .sectionIcon_content {
   display: block;
   font-size: 15px;
   color: #828181;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .secondSection_subsection .learnMore {
   background-color: #54d154;
@@ -286,7 +294,7 @@ h3 {
 .thirdSection .sectionButton {
   color: white;
   border-color: #207b20;
-  background: url(../images/thirdSectionPictures/Shape2.png) no-repeat 97% 50%;
+  background: url(../images/thirdSectionPictures/Shape2.png) no-repeat 90% 50%;
   background-color: #207b20;
 }
 .thirdSection .listPicturesMiniature {
@@ -380,9 +388,13 @@ h3 {
 }
 .fifthSection .clientLogo .logoClientPictures img {
   vertical-align: -webkit-baseline-middle;
+  transition: transform 0.5s;
+}
+.fifthSection .clientLogo .logoClientPictures img:hover {
+  transform: rotate(360deg);
 }
 .fifthSection .clientLogo .client_logo {
-  padding-left: 60px;
+  padding-left: 70px;
   padding-right: 60px;
   display: inline-table;
 }
@@ -501,4 +513,132 @@ h3 {
   padding-right: 0px;
   padding-top: 5px;
   height: 35px;
+}
+.fsec {
+  margin-top: 90px;
+  background-color: #333333;
+  color: white;
+  height: 622px;
+}
+.fsec .fsec_subsec {
+  float: left;
+  width: 33%;
+  height: 445px;
+}
+.fsec .fsec_subsec .h2_footer {
+  font-size: 16px;
+  color: white;
+}
+.fsec .fsec_subsec .fsec_2_el {
+  text-decoration: none;
+  color: white;
+  zoom: 1;
+}
+.fsec .fsec_subsec .fsec_2_el span {
+  font-size: 16px;
+}
+.fsec .fsec_subsec .fsec_2_el:visited {
+  color: green;
+}
+.fsec .fsec_subsec .fsec_2_el:before,
+.fsec .fsec_subsec .fsec_2_el:after {
+  content: "";
+  display: table;
+}
+.fsec .fsec_subsec .fsec_2_el:after {
+  clear: both;
+}
+.fsec .fsec_subsec .fsec_2_el .fsec_2_post_title {
+  display: block;
+}
+.fsec .fsec_subsec .fsec_2_el .post_title_first:before {
+  content: "";
+  background: url(../images/footerPictures/first_pic.png);
+  height: 53px;
+  width: 53px;
+  display: block;
+  float: left;
+}
+.fsec .fsec_subsec .fsec_2_el .post_title_sec:before {
+  content: "";
+  background: url(../images/footerPictures/sec_pic.png);
+  height: 53px;
+  width: 53px;
+  display: block;
+  float: left;
+}
+.fsec .fsec_subsec .fsec_2_el .post_title_third:before {
+  content: "";
+  background: url(../images/footerPictures/third_pic.png);
+  height: 53px;
+  width: 53px;
+  display: block;
+  float: left;
+}
+.fsec .fsec_subsec .fsec_2_el .post_title_forth:before {
+  content: "";
+  background: url(../images/footerPictures/forth_pic.png);
+  height: 53px;
+  width: 53px;
+  display: block;
+  float: left;
+}
+.fsec .fsec_subsec .fsec_2_el .post_title_fifth:before {
+  content: "";
+  background: url(../images/footerPictures/fifth_pic.png);
+  height: 53px;
+  width: 53px;
+  display: block;
+  float: left;
+}
+.fsec .fsec_subsec .fsec_2_el .fsec_2_post_group {
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.fsec .fsec_subsec .fsec_2_el .post_group_first {
+  background-color: #54d154;
+}
+.fsec .fsec_subsec .fsec_2_el .post_group_sec {
+  background-color: #ffba00;
+}
+.fsec .fsec_subsec .fsec_2_el .post_group_third {
+  background-color: #089dea;
+}
+.fsec .fsec_subsec .fsec_2_el .post_group_forth {
+  background-color: #f34d04;
+}
+.fsec .fsec_subsec .fsec_2_el .post_group_fifth {
+  background-color: #ffba00;
+}
+.fsec .fsec_subsec .contanct_information {
+  text-align: center;
+}
+.fsec .fsec_subsec .contanct_information span {
+  display: block;
+  font-size: 14px;
+}
+.fsec .fsec_subsec .contanct_information span a {
+  text-decoration: none;
+  color: white;
+}
+.fsec .fsec_subsec .contanct_information span a:visited {
+  color: grey;
+}
+.fsec .fsec_subsec .contanct_information span a:hover {
+  font-weight: bold;
+}
+.fsec .fsec_subsec .contanct_information span a:active {
+  color: red;
+}
+.fsec .fsec_subsec .contact_form {
+  text-align: center;
+}
+.fsec .fsec_subsec .contact_form .input_wrapper {
+  background-color: #444444;
+  margin-bottom: 5px;
+}
+.fsec .fsec_subsec .contact_form .input_wrapper .user_info {
+  border-color: transparent;
+  background-color: transparent;
 }
