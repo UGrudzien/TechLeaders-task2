@@ -7,38 +7,44 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
 
     <header class="masterHeader">
-        <div class="top_shadow_picture"></div>
+        <div class="masterHeader__top_shadow_picture"></div>
 
-
+        <button class="hamburger-menu"><span class="hamburger-menu__content">Menu</span></button>
         <nav class="masterNav">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="#" class="nav-item-link">Home</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-item-link">What we do?</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-item-link">Testimonial</a></li>
-                <li class="nav-list-item"><a href="#" class="nav-item-link">Contact us</a></li>
+            <ul class="nav-list nav-list--hidden">
+                <li class="nav-list__item"><a href="#" class=" nav-list__item__link--first nav-list__item__link ">Home</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__item__link">What we do?</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__item__link">Testimonial</a></li>
+                <li class="nav-list__item"><a href="#" class="nav-list__item__link">Contact us</a></li>
 
             </ul>
             <!--<div style="clear: both"></div>-->
         </nav>
 
         <a class="logo" href="#"></a>
+
+        <a href="#" class="mastercheder-search-loop"></a>
+
         <div class="searchInput">
             <input type="search" placeholder="Search..">
         </div>
-
-        <h1>
-            Art is Eternal Happines
-        </h1>
-        <a class="subtitle_link" href="#">
+        <div class="masterHeader-title">
+            <h1>
+                Art is Eternal Happines
+            </h1>
+            <a class="button-btn" href="#">
         Work with us
     </a>
-        <a href="#" class="masterHeader_scroll"> Scroll down</a>
+
+            <a href="#" class="masterHeader_scroll"> Scroll down</a>
+        </div>
     </header>
 
 
@@ -90,7 +96,7 @@
                 <a class="learnMore" href="#">Learn More </a>
             </div>
         </section>
-        <section class="thirdSection">
+        <section class="thirdSection latestWork">
             <h2>
                 Our latest work
             </h2>
@@ -100,12 +106,12 @@
             <div class="buttonsThirdSection">
                 <a href="#">Photography</a><a href="#">Design</a><a href="#">Print</a>
             </div>
-            <ul class="picturesList_S3">
-                <li class="listPictures">
+            <ul class="picturesList_S3 latestWork__portfolio">
+                <li class="listPictures latestWork__portfolio__item">
                     <a href="#" class="listPicturesMiniature"><img src="assets/images/thirdSectionPictures/RoundedRectangle6.png" /></a>
                 </li>
 
-                <li class="listPictures">
+                <li class="latestWork__portfolio__item latestWork__portfolio__item--blue">
                     <a href="#" class="listPicturesMiniature"><img src="assets/images/thirdSectionPictures/RoundedRectangle6copy2.png" /></a>
                 </li>
                 <li class="listPictures">
@@ -351,15 +357,15 @@ tidak menderita penyakit apapun!”
             </div>
             <form class="contact_form">
                 <div class="input_wrapper">
-                    <input class="user_info" placeholder="Your name..."/>
+                    <input class="user_info" placeholder="Your name..." />
                 </div>
                 <div class="input_wrapper">
-                    <input class="user_info" placeholder="Your email.."/>
+                    <input class="user_info" placeholder="Your email.." />
                 </div>
                 <div class="input_wrapper">
                     <textarea class="user_info" placeholder="Your massage.."></textarea>
                 </div>
-                
+
             </form>
         </div>
     </footer>

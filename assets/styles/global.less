@@ -39,7 +39,15 @@ body {
       color: @textColorGreen;
     }
   }
-   
+   .button(@color:white; @bgColor:green; @hoverBgColor:white ){
+     display: inline-block;
+     color: @color;
+     background-color: @bgColor;
+     transition: all .5s ease-in;
+     &:hover{
+       background-color: @hoverBgColor;
+     }
+   }
  .sectionButton{
    font-size: 18px;
    text-align: center;
