@@ -2,153 +2,167 @@
 @import "variables";
 @import "global";
 .masterHeader {
-    @media (max-width: @screenMobile) {
+    @media (max-width: 1200px   ) {
         min-width: 380px;
+        background-size: auto;
     }
     background: @headerPicture;
     min-height: 659px;
-    /*background-size: 100%;*/
+    background-size: 100%;
     display: block;
-    &__top_shadow_picture {
+    position: relative;
+    .header {
         @media (max-width: @screenMobile) {
             background: @headerShadow no-repeat;
             width: 418px;
         }
         background: @headerShadow repeat no-repeat;
-        position: absolute;
-        width: 100%;
-        height: 38px;
-    }
-    .logo {
-        @media(max-width: @screenMobile) {
-            margin-top: auto;
-            margin-right: auto;
-            margin-top: 35px;
-        }
-        content: "";
-        background-image: @masterLogo;
-        display: block;
-        float: left;
-        left: 46%;
-        margin-top: 5px;
-        height: 20px;
-        width: 62px;
-        .clearfix;
-    }
-    .masterNav {
-        margin: 0px;
-        padding: 4px;
-        float: left;
-        .clearfix
-    }
-    .nav-list {
-        display: inline;
-        margin: 0px;
-        list-style: none;
-        padding: 10px;
-        &--hidden {
+        min-height: 38px;
+        /*min-height: 38px;*/
+        &__hamburger-menu {
+            @media(min-width:@screenTablet){
+            display: none;}
             @media (max-width: @screenMobile) {
-                display: none;
-                width: 35px;
-                height: 5px;
-                background-color: white;
-                margin: 6px 0;
-            }
-        }
-        &__item {
-            display: inline;
-            margin-left: 10px;
-            font-weight: 100;
-            &__link {
-                font-size: 16px;
+                display: block;
+                width: 80px;
+                /*dlaczego się chowa przy 45 px?*/
+                height: 45px;
                 color: white;
-                text-decoration: none;
-                &--first {
-                    font-weight: bold;
-                    border-top-style: solid;
-                    border-top-width: 4px;
-                    border-top-color: #69be54;
+                border-style: none;
+                background-color: transparent;
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: 5px;
+                float: right;
+                margin-top: 25px;
+                &__content {
+                    font-size: 22px;
                 }
             }
         }
-    }
-    .hamburger-menu {
-        @media (max-width: @screenMobile) {
+         &__masterNav {
+             @media(max-width:@screenTablet){
+                 display: none;
+             }
+            margin: 0px;
+            padding: 4px;
             display: block;
-            width: 80px;
-            /*dlaczego się chowa przy 45 px?*/
-            height: 45px;
-            color: white;
-            border-style: none;
-            background-color: transparent;
-            cursor: pointer;
-            margin-left: auto;
-            margin-right: 5px;
+            float: left;
+            .clearfix;
+            &__nav-list {
+              
+                display: inline;
+                margin: 0px;
+                list-style: none;
+                padding: 10px;
+                &--hidden {
+                    @media (max-width: @screenMobile) {
+                        display: none;
+                        width: 35px;
+                        height: 5px;
+                        background-color: white;
+                        margin: 6px 0;
+                    }
+                }
+                &__item {
+                      @media(max-width:@screenDesktop) and (min-width: @screenTablet){
+                    display: block;
+                }
+                    display: inline;
+                    margin-left: 10px;
+                    font-weight: 100;
+                    &__link {
+                        font-size: 16px;
+                        color: white;
+                        text-decoration: none;
+                        &--first {
+                            font-weight: bold;
+                            border-top-style: solid;
+                            border-top-width: 4px;
+                            border-top-color: #69be54;
+                        }
+                    }
+                }
+            }
+        }
+        &__logo {
+            @media(max-width: @screenMobile) {
+                margin-top: auto;
+                margin-right: auto;
+                margin-top: 35px;
+            }
+            content: "";
+            background-image: @masterLogo;
+            display: block;
+            float: left;
+         margin-left: 150px;
+          margin-top: 5px;
+            height: 20px;
+            width: 62px;
+        }
+       
+        &__searchInput {
+            @media(max-width: @screenMobile) {
+                display: none;
+            }
+            background: @loop no-repeat 95% 50%;
+            /*position: absolute;*/
+            background-color: white;
+            
             float: right;
-            margin-top: 25px;
-            &__content {
-                font-size: 22px;
+            margin-top: 5px;
+            border-radius: 16px;
+            right: 2%;
+            padding-top: 0px;
+            padding-left: 5px;
+            opacity: 0.9;
+            color: #020202;
+            border-color: transparent;
+            font-size: 16px;
+            input {
+                border-color: transparent;
+                background-color: transparent;
+            }
+            input:focus {
+                outline: none;
+            }
+        }
+        &__search-loop {
+            @media(max-width: @screenMobile) {
+                margin-left: auto;
+                margin-right: 5px;
+                display: block;
+                height: 25px;
+                width: 25px;
+                background-color: white;
+                border-radius: 50%;
+                background: white url("../images/magnifying-glass34.png") no-repeat 50%;
             }
         }
     }
-    .searchInput {
-        @media(max-width: @screenMobile) {
-            display: none;
-        }
-        background: @loop no-repeat 95% 50%;
-        /*position: absolute;*/
-        background-color: white;
-        display: inline;
-        float: right;
-        border-radius: 16px;
-        right: 2%;
-        padding-top: 0px;
-        padding-left: 5px;
-        opacity: 0.9;
-        margin-top: 5px;
-        color: #020202;
-        border-color: transparent;
-        font-size: 16px;
-        input {
-            border-color: transparent;
-            background-color: transparent;
-        }
-        input:focus {
-            outline: none;
-        }
-    }
-    .mastercheder-search-loop {
-        @media(max-width: @screenMobile) {
-            margin-left: auto;
-            margin-right: 5px;
-            display: block;
-            height: 25px;
-            width: 25px;
-            background-color: white;
-            border-radius: 50%;
-            background: white url("../images/magnifying-glass34.png") no-repeat 50%;
-            .clearfix;
-        }
-    }
+.masterHeader-title{
+    min-height: 300px;
+    margin-top: 200px;
+
     h1 {
         @media(max-width: @screenMobile) {
             font-size: 30px;
-            
         }
-        display: inline-block;
+        /*display: inline-block;*/
         text-align: center;
         width: 70%;
         font-size: 55px;
         color: white;
-       margin-left: auto;
-       margin-right: auto;
-        top: 48%;
-        left: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        /*top: 48%;
+        left: 30%;*/
     }
     .button-btn {
         .button;
     }
-    .subtitle_link {
+}
+    /*.subtitle_link {
         background-color: #54d154;
         text-decoration: none;
         font-size: 22px;
@@ -165,23 +179,24 @@
         width: 180px;
         padding-top: 8px;
         padding-left: 20px;
-    }
+    }*/
     .masterHeader_scroll {
         @media(max-width: @screenMobile) {
             display: none;
         }
-        background-color: white;
-        background: rgba(250,
-        250,
-        250,
-        0.9) url("../images/Shape 1.png") no-repeat 97% 65%;
+        .button-small;
+        background: rgba(250,250,250,0.9) url("../images/Shape 1.png") no-repeat 97% 65%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
         text-decoration: none;
-        font-size: 16px;
-        color: black;
+        /*font-size: 16px;
+        color: black;*/
         bottom: 2%;
         left: 46%;
         padding-left: 10px;
         padding-right: 15px;
-        border-radius: 15px;
+        margin-top: 50px;
+        /*border-radius: 15px;*/
     }
 }

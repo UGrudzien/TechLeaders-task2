@@ -39,14 +39,31 @@ body {
       color: @textColorGreen;
     }
   }
-   .button(@color:white; @bgColor:green; @hoverBgColor:white ){
-     display: inline-block;
+   .button(@color:white; @bgColor:#54d154; @hoverBgColor: purple ){
+     display: block;
      color: @color;
      background-color: @bgColor;
+     text-decoration: none;
+     border-radius: @radius;
+     text-transform: uppercase;
+     max-width: 220px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 6px;
+     font-size: 22px;
      transition: all .5s ease-in;
      &:hover{
        background-color: @hoverBgColor;
      }
+   }
+   .button-small(@color: black; @bgColor: white){
+     color: @color;
+     background-color: @bgColor;
+     max-width: 100px;
+     opacity: 0,9;
+     font-size: 16px;
+     border-radius: @radius;
    }
  .sectionButton{
    font-size: 18px;
