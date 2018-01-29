@@ -1,20 +1,18 @@
 @import "variables";
-
 body {
-  background: @bodyBgColor;
-  color: @textColor;
-  margin: 0%;
-  font-family: Open Sans;
-  a{
+    background: @bodyBgColor;
     color: @textColor;
-    &:hover {
-      color: darken(@textColor, 50%);
+    margin: 0%;
+    font-family: Open Sans;
+    a {
+        color: @textColor;
+        &:hover {
+            color: darken(@textColor, 50%);
+        }
     }
-  }
-
-
 }
-  h2{
+
+.globalHeaderTitle {
     text-transform: uppercase;
     font-size: 21px;
     color: @textColor;
@@ -23,68 +21,72 @@ body {
     height: 42px;
     padding-top: 42px;
     margin-top: 0px;
-  }
-  h3{
+}
+
+.globalHeaderSubtitle {
     font-size: 16px;
     color: #b7b3b3;
     text-align: center;
     margin-bottom: 62px;
-  }
-  .greenSectionTitle{
-    h2{
-      color:@textColorGreenTitle;
-        background: url(../images/Rectangle3.3.png) no-repeat 50% 100%;  
+}
+
+.greenSectionTitle {
+    color: @textColorGreenTitle;
+    background: url(../images/Rectangle3.3.png) no-repeat 50% 100%;
+}
+
+.greenSectionSubtitle {
+    color: @textColorGreenTitle;
+}
+
+.button(@color: white;
+@bgColor: @backgroundGreen;
+@hoverBgColor: purple) {
+    display: block;
+    color: @color;
+    background-color: @bgColor;
+    text-decoration: none;
+    border-radius: @radius;
+    max-width: 220px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    font-size: 22px;
+    transition: all .5s ease-in;
+    &:hover {
+        background-color: @hoverBgColor;
     }
-    h3{
-      color: @textColorGreen;
-    }
-  }
-   .button(@color:white; @bgColor:#54d154; @hoverBgColor: purple ){
-     display: block;
-     color: @color;
-     background-color: @bgColor;
-     text-decoration: none;
-     border-radius: @radius;
-     text-transform: uppercase;
-     max-width: 220px;
-     text-align: center;
-     margin-left: auto;
-     margin-right: auto;
-     padding: 6px;
-     font-size: 22px;
-     transition: all .5s ease-in;
-     &:hover{
-       background-color: @hoverBgColor;
-     }
-   }
-   .button-small(@color: black; @bgColor: white){
-     color: @color;
-     background-color: @bgColor;
-     max-width: 100px;
-     opacity: 0,9;
-     font-size: 16px;
-     border-radius: @radius;
-   }
- .sectionButton{
-   font-size: 18px;
-   text-align: center;
+}
+
+.button-small(@color: black;
+@bgColor: white) {
+    color: @color;
+    background-color: @bgColor;
+    max-width: 100px;
+    opacity: 0, 9;
+    font-size: 16px;
+    border-radius: @radius;
+}
+
+.sectionButton {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    width: 185px;
+    height: 40px;
+    border-radius: @radius;
+    border-style: solid;
+    padding-right: 25px;
+    padding-left: 10px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    span {
         display: inline-block;
-        position: absolute;
-        bottom: 10%;
-        left: 42%;   
-        width: 185px;
-        height: 40px;
-        border-radius: @radius;
-        border-style: solid;
-        padding-right:25px;
-        padding-left: 10px;
-        text-decoration: none;
-        span{
-          display: inline-block;
-          vertical-align: middle;
-          vertical-align: -webkit-baseline-middle;
-          vertical-align: -moz-middle-with-baseline;
-         
-          
-        }
- }
+        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
+        vertical-align: -moz-middle-with-baseline;
+    }
+}

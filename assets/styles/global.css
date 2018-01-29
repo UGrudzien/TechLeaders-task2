@@ -11,7 +11,7 @@ body a {
 body a:hover {
   color: #020202;
 }
-h2 {
+.globalHeaderTitle {
   text-transform: uppercase;
   font-size: 21px;
   color: #828181;
@@ -21,26 +21,23 @@ h2 {
   padding-top: 42px;
   margin-top: 0px;
 }
-h3 {
+.globalHeaderSubtitle {
   font-size: 16px;
   color: #b7b3b3;
   text-align: center;
   margin-bottom: 62px;
 }
-.greenSectionTitle h2 {
+.greenSectionTitle {
   color: #207b20;
   background: url(../images/Rectangle3.3.png) no-repeat 50% 100%;
 }
-.greenSectionTitle h3 {
-  color: #2b9b2b;
+.greenSectionSubtitle {
+  color: #207b20;
 }
 .sectionButton {
   font-size: 18px;
   text-align: center;
-  display: inline-block;
-  position: absolute;
-  bottom: 10%;
-  left: 42%;
+  display: block;
   width: 185px;
   height: 40px;
   border-radius: 30px;
@@ -48,6 +45,9 @@ h3 {
   padding-right: 25px;
   padding-left: 10px;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 .sectionButton span {
   display: inline-block;

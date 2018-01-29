@@ -1,57 +1,76 @@
 @import "variables";
-
-.whatWedo{
-     height: 580px;
-     background-color: white;
-    
-     
+@import "global";
+.whatWeDo {
+    min-height: 580px;
+    background-color: white;
 }
-.secondSection_subsection{
+
+.whatWeDoSubsection {
+    @media(max-width:@screenTablet){
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 25px;
+        width: 80%;
+    }
     float: left;
     text-align: center;
     width: 33%;
-
-    
-    .sectionIconBackground{
+    &__icon {
         height: 142px;
         width: 142px;
-        background-color: #e1f3e1;
-        position: relative;
+       
         border-radius: 15px;
-        display: inline-block;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        &--first{
+                    background: #e1f3e1 url(../images/whatWeDoPictures/Forma1.png) no-repeat 50%;
+
+        }
+        &--second{
+                    background: #e1f3e1 url(../images/whatWeDoPictures/Forma2.png) no-repeat 50%;
+
+        }
+        &--third{
+                    background: #e1f3e1 url(../images/whatWeDoPictures/Forma3.png) no-repeat 50%;
+
+        }
     }
-    .sectionIcon{
+    /*.sectionIcon{
         content: "";
         height: 78px;
         width: 88px;
        display: inline-block;
         background-color: #e1f3e1;
-        background: url(../images/secondSectionPictures/Forma1.png) no-repeat 50%; 
         position: absolute;
         top: 25%;
         right: 20%;     
-    }
-    .sectionIcon_title{
+    }*/
+    &__title {
         display: block;
         font-size: 24px;
         color: @textColor;
         font-weight: bold;
     }
-    .sectionIcon_content{
+    &__content {
+        @media(max-width: @screenTablet){
+            padding: 0px;
+            padding-bottom: 10px;
+        }
         display: block;
         font-size: 15px;
         color: @textColor;
-        padding-left: 90px;
-        padding-right: 90px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    .learnMore{
-        background-color: #54d154;
-        border-radius: 15px;
-        color: @bodyBgColor;
-        text-decoration: none;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+    &__learnMore {
+     
+      .button-small(white;@backgroundGreen);
+          text-decoration: none;
+          padding-left: 10px;
+          padding-right: 10px;
+}
 }

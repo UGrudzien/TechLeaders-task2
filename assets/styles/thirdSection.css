@@ -11,7 +11,7 @@ body a {
 body a:hover {
   color: #020202;
 }
-h2 {
+.globalHeaderTitle {
   text-transform: uppercase;
   font-size: 21px;
   color: #828181;
@@ -21,7 +21,7 @@ h2 {
   padding-top: 42px;
   margin-top: 0px;
 }
-h3 {
+.globalHeaderSubtitle {
   font-size: 16px;
   color: #b7b3b3;
   text-align: center;

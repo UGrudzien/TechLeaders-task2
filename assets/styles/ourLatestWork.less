@@ -1,0 +1,158 @@
+@import "variables";
+@import "global";
+@import "cf";
+.ourLatestWork {
+    min-height: 750px;
+    background-color: @backgroundGreen;
+    position: relative;
+    a {
+        text-decoration: none
+    }
+    .clearfix;
+    &__title {
+        color: @textColorGreenTitle;
+        background: url(../images/Rectangle3.3.png) no-repeat 50% 100%;
+    }
+    &__subtitle {
+        color: @textColorGreen;
+    }
+    /*problem z dodaniem zmiennej backgroundGreen*/
+    &__buttons {
+        text-align: center;
+        a {
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #2b9b2b;
+            border-color: @textColorGreenTitle;
+            background-color: @bodyBgColor;
+            border-style: solid;
+            border-width: 1px;
+        }
+        a:first-child {
+            border-top-left-radius: @radius;
+            border-bottom-left-radius: @radius;
+            color: @bodyBgColor;
+            background-color: @textColorGreenTitle;
+        }
+        a:last-child {
+            border-top-right-radius: @radius;
+            border-bottom-right-radius: @radius;
+            border-left-width: 0px;
+        }
+    }
+    .list_picture {
+        display: inline-block;
+        height: 350px;
+        width: 920px;
+        background: url(../images/thirdSectionPictures/image.png) no-repeat;
+        position: absolute;
+        top: 250px;
+        left: 20%;
+    }
+    .listPicturesMiniature {
+        display: inline-block;
+        /*width: 170px;
+        height: 170px;*/
+        img:hover {
+            width: 170px;
+            height: 170px;
+            padding: 0px;
+        }
+        img {
+            padding: 5px;
+        }
+    }
+  
+    .picturesList_S3 {
+        .graphic-list;
+        margin-bottom: 35px;
+        max-width: 180px;
+        @media (min-width: @screenMobile) {
+            max-width: 380px;
+        }
+        @media (min-width: @screenTablet) {
+            max-width: 570px;
+        }
+        @media (min-width: @screenDesktop) {
+            max-width: 950px;
+        }
+        .listPictures {
+            float: left;
+            padding: 20px 10px 0px 10px;
+        }
+ 
+    }
+}
+
+.graphic-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn-default {
+    .btn;
+}
+
+//BEM Block Element Modifier 
+.latestWork {
+    &__portfolio {
+        @media(max-width: @screenDesktop) {
+            .clearfix;
+        }
+        margin-bottom: 25px;
+        .clearfix;
+        &__item {
+            float: left;
+            padding: 20px 10px 0px 10px;
+            &--clear {
+                .clearfix;
+            }
+            &__link {
+                display: inline-block;
+                img:hover {
+                    width: 170px;
+                    height: 170px;
+                    padding: 0px;
+                }
+                img {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.section_Button {
+    .button;
+      padding: 0px;
+    .sectionButton;
+
+    clear: both;
+    border-color: #2b9b2b;
+
+    background: #2b9b2b url(../images/ourLatestWorkPictures/Shape2.png) no-repeat 90% 50%;
+    
+
+}
+
+.btn(@color: white, @bgColor: #207b20, @hoverBgColor: lighten(#207b20, 10%)) {
+    display: block;
+    color: @color;
+    background: @bgColor;
+    border-radius: 30px;
+    padding: 5px 10px;
+    transition: all .5s ease-in;
+    &:hover {
+        background: @hoverBgColor;
+    }
+}
+
+.btn--white(@color: white, @bgColor: #207b20, @hoverBgColor: lighten(#207b20, 50%)) {
+    background: @color;
+    color: @bgColor;
+    &:hover {
+        background: @color;
+        border-color: @hoverBgColor;
+    }
+}
